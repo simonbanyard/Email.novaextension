@@ -1,14 +1,10 @@
-**Email** opens EML file and provides syntax highlighting to **RFC5322 Messages**.
+**Email** opens EML files and provides syntax highlighting to **RFC5322 Messages**.
 
 
 
 ![](Images/Screenshot.png)
 
 ## Language Support
-
-<!--
-🎈 Whether your extension covers the entirety of a language's syntax or a subset, it can be helpful to describe that for users:
--->
 
 Email currently supports the following features of Important Language:
 
