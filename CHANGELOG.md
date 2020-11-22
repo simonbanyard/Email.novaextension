@@ -1,3 +1,3 @@
-## Version 1.0
+## Version 0.1
 
-Initial release
+Initial "rough around the edges" release.

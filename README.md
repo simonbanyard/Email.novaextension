@@ -1,24 +1,8 @@
-<!--
-👋 Hello! As Nova users browse the extensions library, a good README can help them understand what your extension does, how it works, and what setup or configuration it may require.
+**Email** opens EML file and provides syntax highlighting to **RFC5322 Messages**.
 
-Not every extension will need every item described below. Use your best judgement when deciding which parts to keep to provide the best experience for your new users.
 
-💡 Quick Tip! As you edit this README template, you can preview your changes by selecting **Extensions → Activate Project as Extension**, opening the Extension Library, and selecting "Email" in the sidebar.
 
-Let's get started!
--->
-
-<!--
-🎈 Include a brief description of the features your syntax extension provides. For example:
--->
-
-**Email** provides syntax highlighting and autocompletion for **An Important Language**.
-
-<!--
-🎈 It can also be helpful to include a screenshot or GIF showing your extension in action:
--->
-
-![](https://nova.app/images/en/dark/editor.png)
+![](Images/Screenshot.png)
 
 ## Language Support
 
@@ -28,19 +12,15 @@ Let's get started!
 
 Email currently supports the following features of Important Language:
 
-- Lorem
-- Ipsum
-- Dolor
+- All standard field names
+- X-headers
+- MIME Fields
+- Email Address highlighting
 
 Support for:
 
-- Sit
-- Amet 
+- SPF Highlighting
+- DKIM Highlighting
+- DMARC Highlighting 
 
 is planned for a future update.
-
-<!--
-👋 That's it! Happy developing!
-
-P.S. If you'd like, you can remove these comments before submitting your extension 😉
--->
