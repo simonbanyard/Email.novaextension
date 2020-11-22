@@ -6,5 +6,6 @@
     "version": "0.1",
     "categories": ["languages"], 
     "license": "MIT",
-    "repository": "https://github.com/simonbanyard/Email.novaextension"
+    "repository": "https://github.com/simonbanyard/Email.novaextension",
+    "bugs": "https://github.com/simonbanyard/Email.novaextension/issues"
 }
