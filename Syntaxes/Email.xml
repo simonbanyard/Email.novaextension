@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="eml">
+    <meta>
+        <name>Email Message Format</name>
+        <type>structured</type>
+        <preferred-file-extension>eml</preferred-file-extension>
+    </meta>
+    
+    <detectors>
+        <extension priority="1.0">eml</extension>
+    </detectors>
+    
+    <surrounding-pairs>
+        <pair open="&lt;" close="&gt;" />`
+        <pair open="(" close=")" />
+        <pair open="--" close="--" />
+    </surrounding-pairs>
+    
+    <scopes>
+        <scope name="eml.field.keyword">
+            <expression>(?i:^to:)</expression>
+        </scope>
+
+        <scope name="eml.field.keyword">
+            <expression>(?i:^date:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^from:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^sender:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^reply-to:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^to:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^cc:)</expression>
+        </scope>
+              
+        <scope name="eml.field.keyword">
+            <expression>(?i:^bcc:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^message-id:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^original-recipient:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^authentication-results:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^received-spf:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^dkim-signature:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^in-reply-to:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^references:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^subject:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^comments:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^keywords:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-date:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-from:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-sender:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-to:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-cc:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-bcc:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-reply-to:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^resent-message-id:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^return-path:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^received:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^encrypted:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^disposition-notification-to:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^disposition-notification-options:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^accept-language:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^original-message-id:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^pics-label:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^encoding:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-archive:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-help:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-id:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-owner:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-post:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-subscribe:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^list-unsubscribe:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^message-context:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^dl-expansion-history:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^alternate-recipient:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^original-encoded-information-types:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^content-return:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^generate-delivery-report:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^prevent-nondelivery-report:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^obsoletes:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^supersedes:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^content-identifier:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^delivery-date:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^expiry-date:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^expires:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^reply-by:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^importance:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^incomplete-copy:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^priority:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^sensitivity:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^language:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^conversion:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^conversion-with-loss:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^message-type:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^autosubmitted:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^autoforwarded:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^discarded-x400-ipms-extensions:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^discarded-x400-mts-extensions:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^disclose-recipients:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^deferred-delivery:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^latest-delivery-time:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^originator-return-address:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-content-identifier:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-content-return:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-content-type:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-mts-identifier:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-originator:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-received:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-recipients:)</expression>
+        </scope>
+        
+        <scope name="eml.field.keyword">
+            <expression>(?i:^x400-trace:)</expression>
+        </scope>
+    
+        <scope name="eml.field.x-header.keyword">
+            <expression>[xX]-[-\w]+:</expression>
+        </scope>
+        
+        <scope name="eml.address.string">
+            <expression>\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b</expression>
+        </scope>
+        
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^mime-version:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-id:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-description:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-transfer-encoding:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-type:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-base:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-location:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-features:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-disposition:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-language:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-alternative:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-md5:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i:^content-duration:)</expression>
+        </scope>
+
+        <scope name="eml.mime.keyword">
+        	<expression>(?i: charset)</expression>
+        </scope>
+
+    </scopes>
+</syntax>
